@@ -70,6 +70,7 @@ html::-webkit-scrollbar-thumb{
     margin: 0 1rem;
     color: white;
     text-decoration: none;
+    padding: 5px 10px;
 }
 .header__nav a:after{
     content: "";
@@ -90,7 +91,8 @@ html::-webkit-scrollbar-thumb{
 .active {
     border: 1px solid;
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 10px;
+    color:var(--main-color);
 }
 .nav__logo{
     height: 5rem;
@@ -216,7 +218,7 @@ span{
 /*  Our Menu  */
 .menu{
     padding-top: 8rem;
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
 }
 .menu__title{
     text-align: center;
@@ -286,8 +288,7 @@ span{
 }
 .products .box{
     padding: 1rem;
-    
-} 
+}
 .products .icons{
     position: relative;
     display: flex;
@@ -324,6 +325,9 @@ span{
 .review{
     padding-top: 8rem;
     padding-bottom: 1rem;
+}
+.box__container {
+    margin-bottom: 1rem;
 }
 .review .box {
     padding: 2rem;
