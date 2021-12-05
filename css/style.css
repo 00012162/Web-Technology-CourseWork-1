@@ -575,6 +575,7 @@ span{
     padding: 1rem;
     text-align: center;
     display: none;
+    z-index: 2;
 }
 .main__cart .main__cart-box {
     display: flex;
