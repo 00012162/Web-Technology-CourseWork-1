@@ -18,7 +18,6 @@
     border:none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2s linear;
 }
 
 html{
@@ -117,7 +116,6 @@ html::-webkit-scrollbar-thumb{
     display: block;
     position: relative;
     top: 22rem;
-    
 }
 .content {
     max-width: 35rem;
@@ -149,7 +147,11 @@ html::-webkit-scrollbar-thumb{
 }
 /* About US  */
 body{
-    background: #000;
+    background: #000;    
+}
+.about{
+    padding-top: 12rem;
+    padding-bottom: 10rem;
 }
 .heading{
     text-align: center;
@@ -158,7 +160,6 @@ body{
     font-size: 2.5rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
-    margin-top: 2rem
 }
 span{
     color: var(--main-color);
@@ -208,6 +209,10 @@ span{
     color: black;
 }
 /*  Our Menu  */
+.menu{
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+}
 .menu__title{
     text-align: center;
     display: block;
@@ -270,6 +275,10 @@ span{
     font-weight: 400;
 }
 /* Products */
+.products{
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+}
 .products .box{
     padding: 1rem;
     
@@ -307,6 +316,10 @@ span{
     color: white;
 }
 /* Review Section */
+.review{
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+}
 .review .box {
     padding: 2rem;
 }
@@ -329,6 +342,10 @@ span{
     margin-top: 1rem;
 }
 /* Contact US */
+.contacts{
+    padding-top: 12rem;
+    padding-bottom: 10rem;
+}
 .contacts .row{
     display: flex;
     align-items: center;
@@ -355,7 +372,7 @@ span{
     margin: 2rem 1rem;
     text-align: center;
 }
-.inputBox{
+.about__content .inputBox, .inputBox_search{
     display: flex;
     align-items: center;
     margin: 2rem;
@@ -363,10 +380,10 @@ span{
     border: var(--border);
     padding: 0 1.5rem; 
 }
-.inputBox span {
+.about__content .inputBox span {
     font-size: 1.3rem;
 }
-.inputBox input{
+.about__content .inputBox input, .inputBox_search input{
     color: white;
     width: 100%;
     background: none;
@@ -376,6 +393,10 @@ span{
 }
 
 /* Our Blogs */
+.blog{
+    padding-top: 8rem;
+    padding-bottom: 0;
+}
 .blog .box{
     margin: 1rem 0;
     padding: 0;
@@ -395,6 +416,7 @@ span{
     height: 100%;
     object-fit: cover;
     margin-bottom: 10rem;
+    transition: .5s;
 }
 .blog .blog__content{
     padding: 1rem;
@@ -521,7 +543,7 @@ span{
     display: flex;
 }
 /* Search input */
-.main .inputBox{
+.inputBox_search{
     display: none;
     position: absolute;
     transform-origin: top;
@@ -533,14 +555,14 @@ span{
     padding: 0 .5rem;
     margin: 0;
 }
-.main .inputBox input {
+.inputBox_search input {
     color: #000;
     padding: 0 .5rem;
 }
-.main .inputBox span {
+.inputBox_search span {
     color: #000;
 }
-.main .inputBox span:hover {
+.inputBox_search span:hover {
     color: var(--main-color);
 }
 /* Cart opened */
