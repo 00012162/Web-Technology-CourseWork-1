@@ -83,9 +83,14 @@ html::-webkit-scrollbar-thumb{
 }.header__nav a:hover{
     color: var(--main-color);
 }
-.header__nav a:hover:after{
+.header__nav a:not(.active):hover:after{
     background-color: var(--main-color);
     bottom: -0.5rem;
+}
+.active {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
 }
 .nav__logo{
     height: 5rem;
