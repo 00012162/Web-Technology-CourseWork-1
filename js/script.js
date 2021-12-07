@@ -3,9 +3,28 @@ const burgerBtn = document.querySelector("#menu-btn");
 const closeBtn = document.querySelector("#close-btn");
 const links = document.querySelectorAll(".mobile__nav-link");
 const searchBtn = document.querySelector("#search-icon");
-const inputBox = document.querySelector("#inputBox");
+// const inputBox = document.querySelector("#inputBox");
 const cartBtn = document.querySelector("#cart-icon");
 const menuCart = document.querySelector("#menu__cart");
+
+window.addEventListener('load', () => {
+    let sections = document.querySelectorAll(".section");
+    sections.forEach((section) => {
+        let inputBox = document.createElement("div") ;
+        let inputBoxSearch = document.createElement("input");
+        let span = document.createElement("span");
+
+        inputBox.classList.add("inputBox_search");
+        inputBox.setAttribute('id', 'inputBox')
+        inputBoxSearch.classList.add("inputBoxSearch");
+        span.classList.add("fas", "fa-search", "inputBox__span");
+
+        inputBox.appendChild(inputBoxSearch);
+        inputBox.appendChild(span);
+
+    section.appendChild(inputBox);
+    })
+});
 
 links.forEach((link) => {
     link.addEventListener("click", () => {
