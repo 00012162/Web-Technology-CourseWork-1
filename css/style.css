@@ -449,7 +449,7 @@ span{
 /* Contact US */
 .contacts{
     padding-top: 12rem;
-    padding-bottom: 10rem;
+    padding-bottom: 14rem;
 }
 .contacts .row{
     display: flex;
@@ -615,21 +615,21 @@ span{
     display: none;
     flex-direction: column;
     justify-content: center;
+    overflow: scroll;
 }
 .fullscreen__nav i{
     position: relative;
     color: var(--main-color-hovered);
-    text-align: end;
     font-size: 3rem;
-    right: 2rem;
-    top: -4rem;
+    display: flex;
+    justify-content: end;
 }
 .mobile__nav {
     width: fit-content;
     margin: 0 auto;   
 }
 .mobile__nav li {
-    padding: 1.5rem 4rem;
+    padding: 1rem 4rem;
     margin: 1rem;
     border: var(--border);
     font-size: 1.5rem;
