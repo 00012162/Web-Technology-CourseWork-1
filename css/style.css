@@ -29,15 +29,18 @@ html{
 .loader {
     width: 100%;
     height: 100vh;
-    background-color: #fff;
-    display: grid;
-    place-items: center;
+    background-color: #010103;
     position: fixed;
     transition: all .5s ease;
     z-index: 1000;
+    text-align: center;
+    display: grid;
+    place-items: center;
 }
 .lds-roller {
-    position: relative;
+    width: 5rem;
+    height: 5rem;
+    top: 50%;
 }
   .lds-roller div {
     animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -50,7 +53,7 @@ html{
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: rgb(12, 4, 48);
+    background: #f8ad5e;
     margin: -4px 0 0 -4px;
   }
   .lds-roller div:nth-child(1) {
