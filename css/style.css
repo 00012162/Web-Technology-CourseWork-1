@@ -621,7 +621,7 @@ span{
     position: relative;
     color: var(--main-color-hovered);
     font-size: 3rem;
-    display: grid;
+    display: flex;
     justify-content: end;
 }
 .mobile__nav {
@@ -805,11 +805,11 @@ span{
     .section .inputBox_search{
         height: 4.5rem;
         padding: 0 1.5rem;
-        top: 13%;
+        top: 16%;
         left: 5%;
         width: 90%;
     }
-    .main .inputBox .inputBoxSearch {
+    .section .inputBox .inputBoxSearch {
         display: inline;
     }
 }
