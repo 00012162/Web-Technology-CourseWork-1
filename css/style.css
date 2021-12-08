@@ -39,7 +39,7 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5rem;
 }
                                 /* Header section */
-.container{
+.container, .container-for-cart{
     max-width: 85%;
     margin: 0 auto;
 }
@@ -58,8 +58,6 @@ html::-webkit-scrollbar-thumb{
     align-items: center;
     height: auto;
     place-items: center;
-    
-
 }
 .header__nav ul{
     display: flex;
