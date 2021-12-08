@@ -621,7 +621,7 @@ span{
     position: relative;
     color: var(--main-color-hovered);
     font-size: 3rem;
-    display: flex;
+    display: grid;
     justify-content: end;
 }
 .mobile__nav {
