@@ -14,6 +14,11 @@
         <script src="js/script.js" defer></script>
     </head>
     <body>
+        <!-- loader -->
+        <section class="loader">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </section>
+        <!-- header section starts -->
         <header class="header">
             <div class="container">
                 <div class="navbar">
@@ -37,7 +42,7 @@
                 </div>
             </div>
         </header>
-        <!-- header section ends -->
+        <!-- nav for mobile -->
         <section class="fullscreen__nav" id="burger-menu">
             <nav class="mobile__nav">
                 <ul>
@@ -56,7 +61,6 @@
         <!-- contact section starts  -->
         <section class="contacts section" id="contacts">
             <div class="container">
-                <div class="container-for-cart">
                 <h1 class="heading"><span>Contact</span> US</h1>
                 <div class="row">
                     <div class="about__left">
@@ -64,24 +68,35 @@
                     </div>
                     <div class="about__content">
                         <h3>GET IN TOUCH</h3>
-                        <div class="inputBox">
-                            <span class="fa fa-user"></span>
-                            <input type="text" placeholder="name">
-                        </div>
-                        <div class="inputBox">
-                            <span class="fa fa-envelope"></span>
-                            <input type="email" placeholder="email">
-                        </div>
-                        <div class="inputBox">
-                            <span class="fa fa-phone"></span>
-                            <input type="number" placeholder="number">
-                        </div>
-                        <a href="##" type="submit" class="btn">Contact Now</a>
+                            <form id="form" class="form">
+                            <div class="inputBox">
+                                <span class="fa fa-user"></span>
+                                <input type="text" placeholder="Name" id="name" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="inputBox">
+                                <span class="fa fa-envelope"></span>
+                                <input type="email" placeholder="Email" id="email" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <div class="inputBox">
+                                <span class="fa fa-phone"></span>
+                                <input type="number" placeholder="Phone number" id="number"/>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <button class="btn">Contact Now</button>
+                        </form>
                     </div>
-                </div>
+
             </div>
         </section>
-    <!-- contact section ends -->
+    <!-- footer -->
         
         <footer class="footer">
             <div class="icons">
