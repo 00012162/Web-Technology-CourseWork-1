@@ -1,18 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const loader = document.querySelector('.loader')
 
-    setTimeout(() => {
-        loader.style.opacity = '0'
-        setTimeout(() => {
-            loader.style.display = 'none'
-        }, 500);
-    }, 1500);
-    
-
-    const mobileNav = document.querySelector("#burger-menu");
     const burgerBtn = document.querySelector("#menu-btn");
-    const closeBtn = document.querySelector("#close-btn");
-    const links = document.querySelectorAll(".mobile__nav-link");
     const searchBtn = document.querySelector("#search-icon");
     const cartBtn = document.querySelector("#cart-icon");
 
@@ -44,6 +32,20 @@ window.addEventListener('DOMContentLoaded', () => {
             mainCart.classList.add('main__cart');
             mainCart.setAttribute('id', 'menu__cart');
 
+            // main content
+            let text = "";
+            for (let i = 1; i < 5; i++){
+            text += `<div class="main__cart-box">
+            <img src="../images/cart-item-${i}.png" alt="cart-item-${i}">
+            <div class="box__content">
+                <h3>Cart Item 0${i}</h3>
+                <p class="price">$15.99/-</p>
+            </div>
+            <span class="fas fa-times"></span>
+            </div>`
+            mainCart.innerHTML = text + `<a href="#" class="btn">Check Out Now</a>`;
+            section.appendChild(mainCart);
+            }
             // Cart Btn
 
             cartBtn.addEventListener("click", () => {
@@ -54,31 +56,15 @@ window.addEventListener('DOMContentLoaded', () => {
                 if (inputBox.style.display == "flex")
                     inputBox.style.display = "none";
             });
-
-            links.forEach((link) => {
-                link.addEventListener("click", () => {
-                    mobileNav.classList.remove("open")  
-                })
-            });
             
             // Burger 
-            
-            burgerBtn.addEventListener("click",() => {
-                mobileNav.classList.add("open")
-            });
             burgerBtn.addEventListener("click",() => {
                 if (inputBox.style.display == "flex")
                     inputBox.style.display = "none";
                 if (mainCart.style.display == "block")
                     mainCart.style.display = "none";
             });
-            
-            // Mobile Navigation X
-            
-            closeBtn.addEventListener("click",() => {
-                mobileNav.classList.remove("open")
-            });
-            
+                        
             // Search Button
             
             searchBtn.addEventListener("click", () => {

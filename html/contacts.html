@@ -5,33 +5,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coffee Shop</title>
-
         <!-- font awesome cdn link  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
         <!-- custom css file link  -->
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js" defer></script>
-
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/script.js" defer></script>
+        <script src="../js/cartForOther.js" defer></script>
+        <script src="../js/formValidation.js" defer></script>
     </head>
     <body>
         <!-- loader -->
         <section class="loader">
             <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </section>
-        <!-- header section -->
+        <!-- header section starts -->
         <header class="header">
             <div class="container">
                 <div class="navbar">
-                    <a href="index.html" class="nav__logo"><img src="./images/logo.png" alt="logo"></a>
+                    <a href="../index.html" class="nav__logo"><img src="../images/logo.png" alt="logo"></a>
                     <nav class="header__nav">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a class="active" href="about.html">About</a></li>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
                             <li><a href="menu.html">Menu</a></li>
                             <li><a href="products.html">Products</a></li>
                             <li><a href="review.html">Review</a></li>
-                            <li><a href="contacts.html">Contact</a></li>
+                            <li><a class="active" href="contacts.html">Contact</a></li>
                             <li><a href="blog.html">Blog</a></li>
                         </ul>
                     </nav>
@@ -48,7 +48,7 @@
             <nav class="mobile__nav">
                 <ul>
                     <i class="fas fa-window-close" id="close-btn"></i>
-                    <li><a class="mobile__nav-link" href="index.html">Home</a></li>
+                    <li><a class="mobile__nav-link" href="../index.html">Home</a></li>
                     <li><a class="mobile__nav-link" href="about.html">About</a></li>
                     <li><a class="mobile__nav-link" href="menu.html">Menu</a></li>
                     <li><a class="mobile__nav-link" href="products.html">Products</a></li>
@@ -59,28 +59,46 @@
             </nav>
         </section>
 
-        <!-- about section starts  -->
-
-        <section class="about section" id="about">
-            <div class="container-for-cart">
-                <h1 class="heading"> <span>ABOUT</span> US </h1>
+        <!-- contact section starts  -->
+        <section class="contacts section" id="contacts">
+            <div class="container">
+                <h1 class="heading"><span>Contact</span> US</h1>
                 <div class="row">
                     <div class="about__left">
-                        <img src="./images/about-img.jpeg" alt="About">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47950.83553912683!2d69.28494814999999!3d41.310446850000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1634926296158!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
                     </div>
                     <div class="about__content">
-                        <h3>What Makes Our Coffee Special?</h3>
-                        <p>We care about coffee! The Coffee Beanery has the highest standards in the industry when it comes to providing the finest coffees in the world. We believe the real artistry in producing the perfect bean is in the right roast for each variety. Our master roaster roasts each of our coffees to the peak of its taste potential — choosing from a wide range of roasts.</p>
-                        <p>The result? Some of our coffees are slightly sweet. Others have a bit of snap. Still others display a complex, earthy flavor. But each one of our fine coffees has its own distinctive flavor components that are enhanced by our roasting expertise</p>
-                        <a href="##" class="about-btn">Learn More</a>
+                        <h3>GET IN TOUCH</h3>
+                            <form id="form" class="form">
+                            <div class="inputBox">
+                                <span class="fa fa-user"></span>
+                                <input type="text" placeholder="Name" id="name" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small></small>
+                            </div>
+                            <div class="inputBox">
+                                <span class="fa fa-envelope"></span>
+                                <input type="email" placeholder="Email" id="email" />
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small></small>
+                            </div>
+                            <div class="inputBox">
+                                <span class="fa fa-phone"></span>
+                                <input type="number" placeholder="Phone number" id="number"/>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small></small>
+                            </div>
+                            <button class="btn">Contact Now</button>
+                        </form>
                     </div>
-                </div>
+
             </div>
-
         </section>
-
-        <!-- footer -->
-
+    <!-- footer -->
+        
         <footer class="footer">
             <div class="icons">
                 <a href="##" class="fab fa-facebook-f"></a>
