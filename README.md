@@ -14,3 +14,6 @@ This website does not provide any back-end functionality, that is why some funct
 Link for github repository:
 
     https://github.com/00012162/Web-Technology-CourseWork-1.git
+
+Link to open the website:
+    https://00012162.github.io/Web-Technology-CourseWork-1/
